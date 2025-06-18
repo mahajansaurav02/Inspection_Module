@@ -1,0 +1,31 @@
+.table1,
+th,
+td {
+  /* border: 2px solid black;
+    border-collapse: collapse; */
+  /* padding-left: 40px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .Sralign {
+    width: 40px;
+} */
+
+.btnSuccess {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.a1 {
+  padding-left: 200px;
+}
+
+.a2 {
+  padding-left: 190px;
+}
+
+.formMain{
+  margin-top: 10px;
+}

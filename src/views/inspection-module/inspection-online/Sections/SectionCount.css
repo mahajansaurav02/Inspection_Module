@@ -1,0 +1,20 @@
+.example_dd {
+  text-transform: uppercase;
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 3px;
+  font-weight: bolder;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  background-image: linear-gradient(to bottom right, #e8eff3, #aeb2dc);
+  height: 250px;
+}
+.example_dd:hover {
+  border-radius: '5px';
+  transition: all 0.3s ease 0s;
+}
+
+.col_height {
+  height: 374px !important;
+}

@@ -1,0 +1,462 @@
+.odc-container {
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* .header-odc {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 28px;
+  background-color: rgb(228, 244, 251);
+} */
+.header-2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* .section {
+background: #eff4f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+} */
+
+.section h2 {
+  color: #3f51b5;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.boxes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.odc-box, .survey-box {
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* .odc-box {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 10px;
+} */
+
+.odc-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.odc-box.selected {
+  background: #e6f0f8;
+  border: 2px solid #3f51b5;
+}
+
+.odc-name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.odc-date {
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.odc-status {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.odc-status.completed {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.odc-status.in-progress {
+  background: #fff8e1;
+  color: #ff8f00;
+}
+
+.odc-status.pending {
+  background: #f5f5f5;
+  color: #9e9e9e;
+}
+
+.odc-surveys {
+  font-size: 11px;
+  color: #3f51b5;
+}
+
+.survey-box {
+      background: #91bbda;
+    color: #04305b;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+height: 50px;
+    width: -webkit-fill-available;
+}
+
+.survey-box:hover {
+  background: #bbdefb;
+  transform: scale(1.05);
+}
+
+.no-data {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #6c757d;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Previous CSS remains the same, add these new styles at the end */
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-section .section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.right-section .section h2 {
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.tips-section {
+  background: hsl(46, 100%, 94%);
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #ffc107;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-top: 50px;
+}
+
+.tips-section h3 {
+  margin-top: 0;
+  color: #ff8f00;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tips-section h3::before {
+  content: "💡";
+}
+
+.tips-content {
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.tips-content p {
+  margin: 0;
+}
+
+/* Previous CSS remains the same, add these new styles */
+
+.remarks-section {
+  margin-top: 20px;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #6c757d;
+}
+
+.remarks-section h3 {
+  margin-top: 0;
+  color: #495057;
+  font-size: 16px;
+}
+
+.remarks-content {
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.remarks-content p {
+  margin: 0;
+  color: #343a40;
+}
+
+.agreement-section {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.agreement-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.agreement-button:hover {
+  background-color: #218838;
+}
+
+.agreement-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .agreement-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Remarks Section */
+.remarks-section {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.remarks-content {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.preview-btn, .post-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.preview-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.post-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+.header-odc {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  padding-bottom: 0.3rem;
+  /* border-bottom: 3px solid #39f; */
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .header-odc {
+    font-size: 1.5rem;
+    margin-bottom: 1rem !important;
+  }
+  
+  .text-end {
+    text-align: left !important;
+    margin-top: 1rem;
+  }
+}
+.kalavadhi-design-2 .kalavadhi-traditional {
+  border: 2px solid #d4af37;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #fff9e6;
+  display: inline-block;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+.kalavadhi-design-2 .kalavadhi-label {
+  color: #b8860b;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 1px dashed #d4af37;
+  padding-bottom: 2px;
+  margin-bottom: 3px;
+text-align: center;
+}
+
+.kalavadhi-design-2 .kalavadhi-date {
+  color: #5c3c00;
+  font-size: 15px;
+  text-align: center;
+}
+.image-preview-container {
+  margin: 10px 0;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+.thumbnail-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #6f6666; /* Optional */
+  box-shadow:1px solid #6f6666 ;
+}
+
+/* .no-data {
+  text-align: center;
+  width: 100%;
+  color: #666;
+} */
+.zoom-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom-button:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 90vh;
+}
+
+.close-button {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* or your preferred container height */
+}
+
+.boxes-grid-container {
+  flex: 1;
+  overflow-y: auto; /* makes this container scrollable */
+  padding: 8px;
+      border:#3f51b5
+}
+
+.boxes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* adjust minmax to your card size */
+  gap: 16px;
+  /* Remove any height properties from here */
+}
+
+/* Keep your original card styles */
+.odc-box {
+  /* Your existing card styles */
+  background-color: rgb(210, 213, 255);
+  width: 200px; /* or whatever your original size was */
+  height: 150px; /* or whatever your original size was */
+  gap: 0px;
+}
+
+/* Footer content stays fixed */
+.footer-content {
+  flex-shrink: 0;
+  padding: 16px;
+  border-top: 1px solid #eee;
+}

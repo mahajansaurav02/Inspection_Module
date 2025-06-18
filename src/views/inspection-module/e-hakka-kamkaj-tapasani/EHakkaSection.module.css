@@ -1,0 +1,77 @@
+.cards-container {
+  display: flex;
+  flex-direction: row; /* Changed from column to row */
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap; /* Allows cards to wrap to next line if needed */
+  
+}
+
+.main-card {
+  background: #dcedf7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  min-width: 300px; /* Set a minimum width for each card */
+  flex: 1; /* Allows cards to grow and share space equally */
+}
+
+.main-card h2 {
+  color: #330948a4;
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.card-content {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card-content:hover {
+  background: #e9ecef;
+}
+
+.sub-cards {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  flex-direction: column; /* Keep sub-cards stacked vertically */
+}
+
+.sub-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.sub-card p {
+ font-size: 14px;
+ color: #003b79;
+}
+
+.sub-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(21, 17, 99, 0.1);
+  background: #88bef5;
+}
+
+.sub-card h3 {
+  color: #162027;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.header {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #343a40;
+  letter-spacing: 1px;
+}

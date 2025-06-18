@@ -1,0 +1,26 @@
+// Here you can add other styles
+.ferfar-navbar {
+  background: linear-gradient(to right, #5a6d6f, #ffffff);
+  border-bottom: 1px solid #d4d4d4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  height: 60px;
+}
+/* Force pagination visibility */
+.pagination {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.page-item {
+  display: block !important;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.375rem 0.75rem;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

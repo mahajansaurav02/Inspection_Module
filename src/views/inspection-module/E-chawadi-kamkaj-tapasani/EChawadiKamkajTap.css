@@ -1,0 +1,111 @@
+/* EChawadiKamkajTap.css */
+
+.echawadi-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.echawadi-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 500;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.echawadi-card {
+  min-height: 100px;  /* Reduced from 200px */
+  aspect-ratio: 1/0.5; /* Changed from 1/0.8 to make slightly less tall */
+  border-radius: 16px;
+  padding: 1.5rem;    /* Reduced from 2rem */
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.echawadi-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  color: #3498db;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.card-description {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: auto;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  flex-grow: 1;
+}
+
+.paha-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: fit-content;
+  margin-top: auto;
+}
+
+.paha-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.02);
+}
+
+.paha-button i {
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .echawadi-card {
+    min-height: 280px;
+    aspect-ratio: unset;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .echawadi-container {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .echawadi-card {
+    min-height: 250px;
+    padding: 1.2rem;
+  }
+  
+  .paha-button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+}

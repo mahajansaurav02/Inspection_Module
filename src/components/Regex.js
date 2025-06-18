@@ -1,0 +1,5 @@
+export const validUser = new RegExp('^(?=.*d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$')
+export const validPassword = new RegExp('^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$')
+//export const NUMBERS_ONLY = new RegExp("(/^\d+$/")
+export var NUMBERS_ONLY = new RegExp('/^d+$/')
+export const CHAR_ONLY = new RegExp('/^[a-zA-Z ]*$/')
